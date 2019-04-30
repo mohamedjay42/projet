@@ -1,0 +1,33 @@
+<?php
+
+
+
+function contentUserPlanning()
+{
+  $sContent ='
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+           <!-- Main content -->
+        <section class="content container-fluid">
+                <h2>Planning</h2>
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="box box-primary">
+                        <div class="box-body no-padding">
+                             <!-- THE CALENDAR -->
+                            <div id="calendar"></div>
+                            </div>
+
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /. box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+          </section>
+          <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->';
+  echo sprintf($sContent);
+}

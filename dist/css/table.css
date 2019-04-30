@@ -1,0 +1,11 @@
+table {
+  width:100%;
+  height:auto;
+  border-spacing:5px;
+}
+tr,td,th {
+  border-radius:15em;
+}
+th {
+  color:#3c8dbc;
+}

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atecc Services | User Accueil</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!--tableau calendrier-->
+  <link rel="stylesheet" href="dist/css/table.css">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <ul class="large sidebar-menu logo skin-blue" data-widget="tree">
+        <!--<style>
+            .large {
+                width: auto !important;
+                padding: 0px 0px !important;}</style>-->
+        <li class="active treeview">
+                <a href="adminaccueil.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>A</b>TECC</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>Atecc</b>Services</span>
+                  </a>
+                </a>
+                <ul class="treeview-menu">
+                <li><a href="adminaccueil.html"><i class="fa fa-circle-o"></i> AteccServices</a></li>
+                <li><a href="adminmessage.html"><i class="fa fa-circle-o"></i> AteccServices1</a></li>
+                <li><a href="adminplanning.html"><i class="fa fa-circle-o"></i> AteccServices2</a></li>
+                </ul>
+        </li>
+    </ul>
+
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- /.messages-menu -->
+
+          <!-- Notifications Menu -->
+          <li class="dropdown notifications-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Vous avez 10 notifications</li>
+              <li>
+                <!-- Inner Menu: contains the notifications -->
+                <ul class="menu">
+                  <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <!-- end notification -->
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks Menu -->
+          <li class="dropdown tasks-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- Inner menu: contains the tasks -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <!-- Task title and progress text -->
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <!-- The progress bar -->
+                      <div class="progress xs">
+                        <!-- Change the css width attribute to simulate progress -->
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+      <!-- search form (Optional)
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+        </div>
+      </form>-->
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MENU PRINCIPAL</li>
+          <!-- Optionally, you can add icons to the links -->
+          <li class="active"><a href="adminmessage.html"><i class="fa fa-envelope"></i> <span>Diffusion messages</span></a></li>
+          <li class="active"><a href="adminplanning.html"><i class="fa fa-calendar"></i> <span>Planning complet</span></a></li>
+          <li class="active"><a href="adminplanning.html"><i class="fa fa-calendar-plus-o"></i> <span>Gérer le planning</span></a></li>
+          <li class="active"><a href="userconges.html"><i class="fa  fa-plane"></i> <span>Conges</span></a></li>
+          <li class="active"><a href="adminvalidconges.html"><i class="fa fa-check"></i> <span>Validation congés</span></a></li>
+          <li class="active"><a href="usertimeline.html"><i class="fa fa-comments"></i> <span>Information locale</span></a></li>
+        </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Administration
+        <small>Accueil</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+        <section class="row">
+            <div class="col-md-6">
+                <div class="box box-default">
+                  <div class="box-header with-border">
+                    <i class="fa fa-warning"></i>
+
+                    <h3 class="box-title">Alerte</h3>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+
+                    <div class="alert alert-info alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h4><i class="icon fa fa-info"></i> Alerte !</h4>
+                      <p>Congés validé !</p>
+                    </div>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+
+            <!-- /.col -->
+          </div>
+          <div class="col-md-6">
+            <div class="box box-default">
+              <div class="box-header with-border">
+                <i class="fa fa-bullhorn"></i>
+
+                <h3 class="box-title">Message important</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <div class="callout callout-danger">
+                    <h4><i class="icon fa fa-info"></i> Message !</h4>
+
+                  <p>Travail de nuit prévu entre le 03/03/2019 et 13/03/2019</p>
+                </div>
+              </div>
+              <!-- /.box-body -->
+            </section>
+        <section>
+
+            <h2>Planning</h2>
+              <!-- /.col -->
+             <div class="col-md-12">
+                <div class="box box-primary">
+                  <div class="box-body no-padding">
+                    <!-- THE CALENDAR -->
+
+    <br />
+    <br />
+</center>
+
+<table class="table table-hover text-center" id="tableID">
+  <thead>
+      <tr>
+          <th class="info">Heures</th>
+          <th class="success">Lundi</th>
+          <th class="warning">Mardi</th>
+          <th class="danger">Mercredi</th>
+          <th class="success">Jeudi</th>
+          <th class="warning">Vendredi</th>
+      </tr>
+  </thead>
+  <tbody   style="cursor: pointer;">
+      <tr>
+        <td class="info">7h00</td>
+        <td class="success" id="A1">Text</td>
+        <td class="warning" id="A2">MoreText</td>
+        <td class="danger" id="A3">Lorem</td>
+        <td class="success" id="A4">Ipsum</td>
+        <td class="warning" id="A5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">8h00</td>
+        <td class="success" id="B1">Text</td>
+        <td class="warning" id="B2">MoreText</td>
+        <td class="danger" id="B3">Lorem</td>
+        <td class="success" id="B4">Ipsum</td>
+        <td class="warning" id="B5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">9h00</td>
+        <td class="success" id="C1">Text</td>
+        <td class="warning" id="C2">MoreText</td>
+        <td class="danger" id="C3">Lorem</td>
+        <td class="success" id="C4">Ipsum</td>
+        <td class="warning" id="C5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">10h00</td>
+        <td class="success" id="D1">Text</td>
+        <td class="warning" id="D2">MoreText</td>
+        <td class="danger" id="D3">Lorem</td>
+        <td class="success" id="D4">Ipsum</td>
+        <td class="warning" id="D5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">11h00</td>
+        <td class="success" id="E1">Text</td>
+        <td class="warning" id="E2">MoreText</td>
+        <td class="danger" id="E3">Lorem</td>
+        <td class="success" id="E4">Ipsum</td>
+        <td class="warning" id="E5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">12h00</td>
+        <td class="success" id="F1">Text</td>
+        <td class="warning" id="F2">MoreText</td>
+        <td class="danger" id="F3">Lorem</td>
+        <td class="success" id="F4">Ipsum</td>
+        <td class="warning" id="F5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">13h00</td>
+        <td class="success" id="G1">Text</td>
+        <td class="warning" id="G2">MoreText</td>
+        <td class="danger" id="G3">Lorem</td>
+        <td class="success" id="G4">Ipsum</td>
+        <td class="warning" id="G5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">14h00</td>
+        <td class="success" id="H1">Text</td>
+        <td class="warning" id="H2">MoreText</td>
+        <td class="danger" id="H3">Lorem</td>
+        <td class="success" id="H4">Ipsum</td>
+        <td class="warning" id="H5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">15h00</td>
+        <td class="success" id="I1">Text</td>
+        <td class="warning" id="I2">MoreText</td>
+        <td class="danger" id="I3">Lorem</td>
+        <td class="success" id="I4">Ipsum</td>
+        <td class="warning" id="I5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">16h00</td>
+        <td class="success" id="J1">Text</td>
+        <td class="warning" id="J2">MoreText</td>
+        <td class="danger" id="J3">Lorem</td>
+        <td class="success" id="J4">Ipsum</td>
+        <td class="warning" id="J5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">17h00</td>
+        <td class="success" id="K1">Text</td>
+        <td class="warning" id="K2">MoreText</td>
+        <td class="danger" id="K3">Lorem</td>
+        <td class="success" id="K4">Ipsum</td>
+        <td class="warning" id="K5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">17h00</td>
+        <td class="success" id="L1">Text</td>
+        <td class="warning" id="L2">MoreText</td>
+        <td class="danger" id="L3">Lorem</td>
+        <td class="success" id="L4">Ipsum</td>
+        <td class="warning" id="L5">Ipsum</td>
+      </tr>
+      <tr>
+        <td class="info">18h00</td>
+        <td class="success" id="M1">Text</td>
+        <td class="warning" id="M2">MoreText</td>
+        <td class="danger" id="M3">Lorem</td>
+        <td class="success" id="M4">Ipsum</td>
+        <td class="warning" id="M5">Ipsum</td>
+      </tr>
+    </tbody>
+</table>
+
+<br />
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+                <!-- /. box -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+        </section>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2019 <a href="#">Atecc Services</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="pull-right-container">
+                    <span class="label label-danger pull-right">70%</span>
+                  </span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+  immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- Page specific script -->
+<!--langue-->
+<script src="dist/js/fr.js"></script>
+<script>
+var table = document.getElementById("tableID");
+ if (table != null) {
+     for (var i = 0; i < table.rows.length; i++) {
+         for (var j = 0; j < table.rows[i].cells.length; j++)
+         table.rows[i].cells[j].onclick = function () {
+             tableText(this);
+         };
+     }
+ }
+
+ function tableText(tableCell) {
+     alert(tableCell.getAttribute("id"));
+ }
+</script>
+</body>
+</html>

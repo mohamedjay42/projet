@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atecc Services | Admin Planning</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+      <!-- Select2 -->
+  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <!--tableau calendrier-->
+    <link rel="stylesheet" href="dist/css/table.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <!-- Main Header -->
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="admin-dashboard.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>S</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Atecc</b> Services</span>
+        </a>
+        <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account Menu -->
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="admin-dashboard.html" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="dist/img/robot.png" class="user-image" alt="User Image">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">Admin</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- The user image in the menu -->
+                <li class="user-header">
+                  <img src="dist/img/robot.png" class="img-circle" alt="User Image">
+                  <p>Admin </p>
+                </li>
+                <li class="user-footer">
+                  <div class="pull-right">
+                    <a href="login.html" class="btn btn-default btn-flat">Se deconnecter</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="dist/img/robot.png" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Admin</p>
+            <!-- Status -->
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MENU PRINCIPAL</li>
+          <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="admin-dashboard.html"><i class="fa fa-bar-chart"></i> <span>Tableau de bord</span></a></li>
+            <li class="active"><a href="admin-planning-update.html"><i class="fa fa-calendar"></i> <span>Modification planning</span></a></li>
+            <li class="active"><a href="admin-valid-hollyday.html"><i class="fa fa-check"></i> <span>Validation congés</span></a></li>
+            <li class="active"><a href="admin-send-message.html"><i class="fa fa-envelope"></i> <span>Diffusion messages</span></a></li>
+            <li class="active"><a href="admin-gestion-role.html"><i class="fa fa-check-square"></i> <span>Activation compte</span></a></li>
+        </ul>
+        <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content container-fluid">
+          <div class="content">
+
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <h3 class="box-title">Mise à jour planning :</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                <label>Chantier</label>
+  				<select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Chantier A</option>
+                    <option>Chantier A</option>
+                    <option>Chantier B</option>
+                    <option>Chantier C</option>
+                    <option>Chantier D</option>
+                    <option>Chantier E</option>
+                    <option>Chantier F</option>
+                  </select>
+                </div>
+                <!-- /.form-group -->
+                <div class="form-group">
+                <label>Employé</label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option>DUPOND Paul</option>
+                      <option>LOPEZ Sylvain</option>
+                      <option>VALON Eric</option>
+                      <option>CHOLAS Claire</option>
+                      <option>JOURDAIN Philippe</option>
+                    </select>
+                  </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+              <div class="col-md-6">
+                  <!-- radio -->
+                  <div class="form-group">
+  	              <label>Durée</label>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        1/4 journée
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        1/2 journée
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                        Journée entière
+                      </label>
+                    </div>
+                  </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+        </div>
+        <!-- /.box -->
+             <div class='row'>
+                <div class="col-md-12">
+                  <div class="box box-primary">
+                    <div class="box-body no-padding">
+                      <br>
+                      <!-- THE CALENDAR -->
+                      <table class="table table-responsive text-center">
+                        <thead>
+                            <tr>
+                                <th class="info">Heures</th>
+                                <th class="info">Lundi</th>
+                                <th class="info">Mardi</th>
+                                <th class="info">Mercredi</th>
+                                <th class="info">Jeudi</th>
+                                <th class="info">Vendredi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableID"  style="cursor: pointer;">
+                            <tr>
+                              <th class="info">7h00</th>
+                              <td class="info" id="A1">Text</td>
+                              <td class="info" id="A2">MoreText</td>
+                              <td class="info" id="A3">Lorem</td>
+                              <td class="info" id="A4">Ipsum</td>
+                              <td class="info" id="A5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">8h00</th>
+                              <td class="info" id="B1">Text</td>
+                              <td class="info" id="B2">MoreText</td>
+                              <td class="info" id="B3">Lorem</td>
+                              <td class="info" id="B4">Ipsum</td>
+                              <td class="info" id="B5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">9h00</th>
+                              <td class="info" id="C1">Text</td>
+                              <td class="info" id="C2">MoreText</td>
+                              <td class="info" id="C3">Lorem</td>
+                              <td class="info" id="C4">Ipsum</td>
+                              <td class="info" id="C5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">10h00</th>
+                              <td class="info" id="D1">Text</td>
+                              <td class="info" id="D2">MoreText</td>
+                              <td class="info" id="D3">Lorem</td>
+                              <td class="info" id="D4">Ipsum</td>
+                              <td class="info" id="D5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">11h00</th>
+                              <td class="info" id="E1">Text</td>
+                              <td class="info" id="E2">MoreText</td>
+                              <td class="info" id="E3">Lorem</td>
+                              <td class="info" id="E4">Ipsum</td>
+                              <td class="info" id="E5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">12h00</th>
+                              <td class="info" id="F1">Text</td>
+                              <td class="info" id="F2">MoreText</td>
+                              <td class="info" id="F3">Lorem</td>
+                              <td class="info" id="F4">Ipsum</td>
+                              <td class="info" id="F5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">13h00</th>
+                              <td class="info" id="G1">Text</td>
+                              <td class="info" id="G2">MoreText</td>
+                              <td class="info" id="G3">Lorem</td>
+                              <td class="info" id="G4">Ipsum</td>
+                              <td class="info" id="G5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">14h00</th>
+                              <td class="info" id="H1">Text</td>
+                              <td class="info" id="H2">MoreText</td>
+                              <td class="info" id="H3">Lorem</td>
+                              <td class="info" id="H4">Ipsum</td>
+                              <td class="info" id="H5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">15h00</th>
+                              <td class="info" id="I1">Text</td>
+                              <td class="info" id="I2">MoreText</td>
+                              <td class="info" id="I3">Lorem</td>
+                              <td class="info" id="I4">Ipsum</td>
+                              <td class="info" id="I5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">16h00</th>
+                              <td class="info" id="J1">Text</td>
+                              <td class="info" id="J2">MoreText</td>
+                              <td class="info" id="J3">Lorem</td>
+                              <td class="info" id="J4">Ipsum</td>
+                              <td class="info" id="J5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">17h00</th>
+                              <td class="info" id="K1">Text</td>
+                              <td class="info" id="K2">MoreText</td>
+                              <td class="info" id="K3">Lorem</td>
+                              <td class="info" id="K4">Ipsum</td>
+                              <td class="info" id="K5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">18h00</th>
+                              <td class="info" id="L1">Text</td>
+                              <td class="info" id="L2">MoreText</td>
+                              <td class="info" id="L3">Lorem</td>
+                              <td class="info" id="L4">Ipsum</td>
+                              <td class="info" id="L5">Ipsum</td>
+                            </tr>
+                            <tr>
+                              <th class="info">19h00</th>
+                              <td class="info" id="M1">Text</td>
+                              <td class="info" id="M2">MoreText</td>
+                              <td class="info" id="M3">Lorem</td>
+                              <td class="info" id="M4">Ipsum</td>
+                              <td class="info" id="M5">Ipsum</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /. box -->
+                </div>
+                <!-- /.col -->
+              </div>
+              </div>
+              <!-- /.row -->
+          </div>
+          </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2019 <a href="#">Atecc Services</a>.</strong> Tous droits réservés.
+      </footer>
+    <!-- /.control-sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Select2 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- Page specific script -->
+<!--langue-->
+<script src="dist/js/fr.js"></script>
+<!-- Page specific script -->
+<script>
+  //new calendar
+  var table = document.getElementById("tableID");
+   if (table != null) {
+       for (var i = 0; i < table.rows.length; i++) {
+           for (var j = 0; j < table.rows[i].cells.length; j++)
+           table.rows[i].cells[j].onclick = function () {
+               tableText(this);
+           };
+       }
+   }
+
+   function tableText(tableCell) {
+       alert(tableCell.getAttribute("id"));
+   }
+</script>
+</body>
+</html>
