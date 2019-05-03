@@ -8,6 +8,8 @@ require_once('models/model.php');
 
 function controllerUserChefValidHoliday()
 {
+  echo __FUNCTION__;
+
   getModelChefValidHoliday();
-  renderViewUserChefValidHoliday();
+//  renderViewUserChefValidHoliday();
 }

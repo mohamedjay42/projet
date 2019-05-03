@@ -8,6 +8,8 @@ require_once('models/model.php');
 
 function controllerUserPlanning()
 {
+  echo __FUNCTION__;
+
   getModelUserPlanning();
-  renderViewUserPlanning();
+//  renderViewUserPlanning();
 }

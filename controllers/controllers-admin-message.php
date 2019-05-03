@@ -8,6 +8,8 @@ require_once('models/model.php');
 
 function controllerAdminMessage()
 {
+  echo __FUNCTION__;
+
   getModelMessage();
-  renderViewAdminMessage();
+//  renderViewAdminMessage();
 }

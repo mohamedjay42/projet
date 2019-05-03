@@ -7,6 +7,9 @@ require_once('models/model.php');
 
 function controllerAdminDashboard()
 {
+
+  echo __FUNCTION__;
+
   getModelDashboard();
-  renderViewAdminDashboard();
+  //renderViewAdminDashboard();
 }

@@ -8,6 +8,8 @@ require_once('models/model.php');
 
 function controllerAdminGestionRole()
 {
+  echo __FUNCTION__;
+
   getModelGestionRole();
-  renderViewAdminGestionRole();
+//  renderViewAdminGestionRole();
 }

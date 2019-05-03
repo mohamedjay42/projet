@@ -1,7 +1,7 @@
 <?php
 
 
-function printStartHtmlDashboard( $sPageTitle, $aCss )
+function printStartHtml( $sPageTitle, $aCss )
 {
   global $aConfigTousLesCSS;
   $sStartHtml =
@@ -78,7 +78,7 @@ function printHeader()
       </header>';
     echo sprintf($sHeader);
 }
- 
+
 function printFooter()
 {
   $sFooter =

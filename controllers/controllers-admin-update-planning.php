@@ -8,6 +8,8 @@ require_once('models/model.php');
 
 function controllerAdminPlanningUpdate()
 {
+  echo __FUNCTION__;
+
   getModelPlanningUpdate();
-  renderViewAdminPlanningUpdate();
+//  renderViewAdminPlanningUpdate();
 }
