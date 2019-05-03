@@ -1,8 +1,8 @@
 <?php
 
-//require('../layout/layout-commun.php');
-require_once('layout-navbar.php');
-require_once('layout-admin-valid-holiday.php');
+
+require_once('layout-commun.php');
+
 
 function renderViewAdminValidHoliday()
 {

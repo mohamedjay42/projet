@@ -1,8 +1,7 @@
 <?php
 
-//require('../layout/layout-commun.php');
+
 require_once('layout-navbar.php');
-require_once('layout-chef-valid-holiday.php');
 
 function renderViewUserChefValidHoliday()
 {

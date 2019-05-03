@@ -1,55 +1,12 @@
 <?php
 
-function printHtml()
-{
-  $sHtml =
-  '
-  <!DOCTYPE html>
-  <html>';
-  //printHead($sPageTitle, $aCss);
-  '<body class="hold-transition skin-blue sidebar-mini">
-    <div class="wrapper">
-      <!-- Main Header -->';
-  //printHeader();
-  '<!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
-      <!-- sidebar: style can be found in sidebar.less -->
-      <section class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel">
-          <div class="pull-left image">
-            <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
-          </div>
-          <div class="pull-left info">
-            <p>Nom prenom</p>
-            <!-- Status -->
-            <a href="index.php?page=user-dashboard"><i class="fa fa-circle text-success"></i> Online</a>
-          </div>
-        </div>
-        <!-- Sidebar Menu -->
-        <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">MENU PRINCIPAL</li>';
-          //  printNav($sRole, $aNav);
-        '</ul>
-            <!-- /.sidebar-menu -->
-          </section>
-          <!-- /.sidebar -->
-        </aside>';
-//  printFooter();
 
-  '</div>
-  <!-- ./wrapper -->';
-  //printEndHtml($sPageTitle,$aScript);
-  '</body>
-  </html>';
-  echo sprintf($sHtml);
-}
-
-function printHead( $sPageTitle, $aCss )
+function printStartHtml( $sPageTitle, $aCss )
 {
   global $aConfigTousLesCSS;
-  $sHeadHtml =
-  '
+  $sStartHtml =
+  '<!DOCTYPE html>
+  <html>
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +14,7 @@ function printHead( $sPageTitle, $aCss )
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">';
 
-  echo sprintf($sHeadHtml, $sPageTitle);
+  echo sprintf($sStartHtml, $sPageTitle);
 
   foreach ($aCss as $sCss ) {
       echo $aConfigTousLesCSS[$sCss] ;
@@ -71,7 +28,9 @@ function printHeader()
 {
   $sPage = '';
   $sHeader =
-  '
+  '<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <!-- Main Header -->
       <header class="main-header">
 
         <!-- Logo -->
@@ -120,15 +79,6 @@ function printHeader()
     echo sprintf($sHeader);
 }
 
-function printNav($sRole, $aNav)
-{
-  global $aConfigNavbar;
-
-  foreach ($aNav as $sNav) {
-    echo $aConfigNavbar[$sNav];
-  }
-}
-
 function printFooter()
 {
   $sFooter =
@@ -136,7 +86,9 @@ function printFooter()
       <footer class="main-footer">
           <!-- Default to the left -->
           <strong>Copyright &copy; 2019 <a href="#">Atecc Services</a>.</strong> Tous droits réservés.
-      </footer>';
+      </footer>
+      </div>
+      <!-- ./wrapper -->';
     echo sprintf($sFooter);
 }
 
@@ -146,6 +98,10 @@ function printEndHtml($sPageTitle,$aScript)
 
   foreach ($aScript as $sScript ) {
       echo $aConfigTousLesScript[$sScript] ;
+      $sEndHtml =
+      '</body>
+      </html>';
 
   }
+  echo sprintf($sEndHtml);
 }

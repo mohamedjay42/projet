@@ -1,6 +1,6 @@
 <?php
 
-require_once('layout-forgot.php');
+//require_once('layout-forgot.php');
 
 
 function renderViewUserForgot()

@@ -1,9 +1,6 @@
 <?php
 
 require_once('layout-commun.php');
-require_once('layout-navbar.php');
-require_once('layout-admin-dashboard.php');
-
 
 
 function renderViewAdminDashboard()

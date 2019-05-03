@@ -1,8 +1,6 @@
 <?php
 
-//require('../layout/layout-commun.php');
-require_once('layout-navbar.php');
-require_once('layout-user-planning.php');
+require('views/layout-commun.php');
 
 function renderViewUserPlanning()
 {

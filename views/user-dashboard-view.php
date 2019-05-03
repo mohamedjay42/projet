@@ -1,14 +1,11 @@
 <?php
 
-//require('../layout/layout-commun.php');
-require_once('layout-navbar.php');
-require_once('views/layout-commun.php');
-require_once('layout-user-dashboard.php');
-
+require_once('layout-commun.php');
 
 function renderViewUserDashboard()
 {
-  printStartHtml( 'user-dashboard', [
+  printHtml();
+  printHead( 'user-dashboard', [
       'bootstrap',
       'fontawesome',
       'ionicons',
@@ -17,7 +14,7 @@ function renderViewUserDashboard()
       'fullcalendar'
       ]);
       printHeader();
-      printNavbarUser();
+      printNav('user',['nav_user']);
       contentUserDashboard();
       printFooter();
       printEndHtml('user-dashboard', [

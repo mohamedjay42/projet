@@ -1,8 +1,7 @@
 <?php
 
-//require('../layout/layout-commun.php');
-require_once('layout-navbar.php');
-require_once('layout-user-holiday.php');
+require('views/layout-commun.php');
+
 
 function renderViewUserHoliday()
 {

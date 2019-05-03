@@ -1,8 +1,7 @@
 <?php
 
-//require_once('../layout/layout-commun.php');
-require_once('layout-navbar.php');
-require_once('layout-admin-message.php');
+require_once('layout-commun.php');
+
 
 function renderViewAdminMessage()
 {

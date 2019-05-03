@@ -1,6 +1,6 @@
 <?php
 
-require_once('layout-login.php');
+//require_once('layout-login.php');
 
 
 function renderViewLogin()
